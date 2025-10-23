@@ -1,81 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Lucia Raciti</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
-    <script src="js/script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lucia Raciti</title>
+
+  <link rel="icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="js/script.js"></script>
 </head>
 <body>
-    <nav>
-        <ul class="nav-list">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="resume.pdf" target="_blank">Resume</a></li>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <ul class="nav-list">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="resume.pdf" target="_blank">Resume</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <img src="images/Lucia photo copy.jpeg" alt="Lucia Raciti" class="profile-image" />
+    <h1 id="typing-name"></h1>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about section">
+    <h2>About Me</h2>
+    <p>
+      I’m a dual-degree student studying <strong>Computer Science</strong> at the University of Notre Dame 
+      and <strong>Mathematics</strong> at Saint Mary’s College. 
+      I’m passionate about leveraging data science and machine learning to address 
+      complex environmental and social challenges.
+    </p>
+    <p>
+      From mentoring high school girls in coding to conducting research on climate change 
+      and species adaptation, I thrive at the intersection of <strong>data, creativity, and impact</strong>.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="skills section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Programming</h3>
+        <ul>
+          <li>Python</li>
+          <li>C</li>
+          <li>R</li>
+          <li>MATLAB</li>
+          <li>LaTeX</li>
         </ul>
-    </nav>
+      </div>
 
-    <div class="top-container" id="home">
-        <img class="profile-image" src="https://hosting.photobucket.com/images/i/lraciti0730/IMG_2684_(2).JPG?width=320&height=320&fit=bounds" alt="Lucia profile picture">
-        <h1 id="name"></h1>
+      <div class="skill-card">
+        <h3>Tools</h3>
+        <ul>
+          <li>GitHub</li>
+          <li>Visual Studio Code</li>
+          <li>Excel</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h3>Data Science</h3>
+        <ul>
+          <li>Statistical Modeling</li>
+          <li>Machine Learning (GAMs, Regression)</li>
+          <li>Data Visualization</li>
+        </ul>
+      </div>
     </div>
+  </section>
 
-    <div class="middle-container">
-        <div class="profile">
-            <h2>Hello.</h2>
-            <p class="intro">I’m a student in the 5 year dual-degree engineering program between Saint Mary’s College and the University of Notre Dame,
-                pursuing majors in Computer Science and Mathematics. I’m passionate about using technology to solve meaningful problems—especially those at the intersection of machine learning and climate change.
-                I have had experiences varying from being a nanny for 5+ years to doing research on how climate change has affected the size of birds.
-            </p>
-        </div>
-        <hr>
-        <div class="skills" id="skills">
-            <h2>My Skills.</h2>
+  <!-- Projects -->
+  <section id="projects" class="projects section">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card fade-in">
+        <!-- ✏️ Replace this placeholder image -->
+        <img src="images/bird.jpg" alt="Bird Size Project" class="project-image" />
+        <h3>Bird Size & Climate Change</h3>
+        <p>
+          Applied Linear Regression and Generalized Additive Models using Machine Learning to study bird size variation over time 
+          in relation to climate trends. Visualized results and presented at the JMM Conference 2025. Will also be presenting at JMM 2026 and NCUWM 2026 conferences.
+        </p>
+        <a><strong>Paper in Process</strong></a>
+      </div>
 
-        <h3>Programming Languages</h3>
-            <ul>
-                <li>C</li>
-                <li>Python</li>
-                <li>LaTeX</li>
-                <li>R Studio</li>
-            </ul>
+      <div class="project-card fade-in">
+        <!-- ✏️ Replace this placeholder image -->
+        <img src="images/farm.jpeg" alt="Farm Market Project" class="project-image" />
+        <h3>Sustainable Farm Market Analysis</h3>
+        <p>
+          Used R-based statistical modeling and hypothesis testing to evaluate community market impact in a group setting. 
+          Identified key trends through data visualization and presented recommendations.
+        </p>
+        <a href="Stats Analysis.pdf" target="_blank" class="btn">View Paper Analysis</a>
+      </div>
 
-          <h3>Tools</h3>
-          <ul>
-            <li>GitHub</li>
-            <li>Visual Studio Code</li>
-          </ul>
+      <div class="project-card fade-in">
+        <!-- ✏️ Replace this placeholder image -->
+        <img src="images/overtourism.jpeg" alt="Mathematical Modeling for Sustainable Tourism in Juneau, Alaska" class="project-image" />
+        <h3>Math Modeling for Sustainable Tourism in Alaska</h3>
+        <p>
+          Developed differential equation models in a team setting to optimize sustainable tourism in Juneau, Alaska.
+          Analyzed the balance between economic revenue and carbon emissions using mathematical modeling and presented actionable sustainability strategies.
+        </p>
+        <a href="2025_MCM_Problem_B.pdf" target="_blank" class="btn">View Paper Analysis</a>
+      </div>
 
-          <h3>Machine Learning & Math Foundations</h3>
-          <ul>
-            <li>Generalized Additive Models</li>
-            <li>Statistics & Hypothesis Testing</li>
-            <li>Linear Regression Modeling</li>
-          </ul>
-        </div>
-        <hr>
-        <div class="contact-me" id="contact">
-            <h2>Get In Touch</h2>
-            <p class="contact">I would love to talk to you more about my experiences and how I can contribute to your company.</p>
-            <a class="btn" href="mailto:lraciti0730@email.com">CONTACT ME</a>
-        </div>
+      <div class="project-card fade-in">
+        <!-- ✏️ Replace this placeholder image -->
+        <img src="images/chat.jpeg" alt="Chat Application" class="project-image" />
+        <h3>Group Project Chat Application </h3>
+        <p>
+            Created a chat application in Operating Systems class with partner to understand how a client and 
+            server can be used for multiple users to chat to each other. Used threads, a monitor, and queues in implementation.
+        </p>
+      </div>
     </div>
+  </section>
 
-    <div class="bottom-container">
-        <a class="footer-link" href="https://github.com/lraciti1">
-            <img class="social-icon" src="images/github-icon.png" alt="GitHub">
-        </a>
-        <a class="footer-link" href="https://www.linkedin.com/in/lucia-raciti-934124250/">
-            <img class="social-icon" src="images/linkedin-icon.png" alt="LinkedIn">
-        </a>
-
-        <p class="copy">© 2025 Lucia Raciti.</p>
+  <!-- Contact -->
+  <section id="contact" class="contact section">
+    <h2>Let’s Connect</h2>
+    <p>Currently seeking a <strong>Data Science Internship</strong> for Summer 2026 — let’s talk!</p>
+    <a href="mailto:lraciti2@nd.edu" class="btn">Email Me</a>
+    <div class="social-links">
+      <a href="https://github.com/lraciti1" target="_blank"><img src="images/github-icon.png" alt="GitHub"></a>
+      <a href="https://www.linkedin.com/in/lucia-raciti-934124250/" target="_blank"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
     </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Lucia Raciti</p>
+  </footer>
 </body>
 </html>

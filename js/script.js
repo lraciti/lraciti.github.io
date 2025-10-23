@@ -1,28 +1,28 @@
-document.addEventListener("DOMContentLoaded", function () {
-    let nameElement = document.getElementById("name");
-    let nameText = "I'm Lucia.";
-    let index = 0;
+// Typing Animation
+document.addEventListener("DOMContentLoaded", () => {
+  const nameElement = document.getElementById("typing-name");
+  const nameText = "I'm Lucia Raciti.";
+  let index = 0;
 
-    function typeName() {
-        if (index < nameText.length) {
-            nameElement.innerHTML += nameText.charAt(index);
-            index++;
-            setTimeout(typeName, 150);
-        } else {
-            setTimeout(deleteName, 1000);
-        }
+  function type() {
+    if (index < nameText.length) {
+      nameElement.textContent += nameText.charAt(index);
+      index++;
+      setTimeout(type, 150);
     }
+  }
+  type();
 
-   /* function deleteName() {
-        if (nameElement.innerHTML.length > 0) {
-            nameElement.innerHTML = nameElement.innerHTML.slice(0, -1);
-            setTimeout(deleteName, 100);
-        } else {
-            setTimeout(typeMajor, 500);
-        }
-    } */
-
-
-    // Start the animation
-    typeName();
+  // Fade-in Animation on Scroll
+  const fadeElements = document.querySelectorAll(".fade-in");
+  function checkVisibility() {
+    fadeElements.forEach((el) => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 100) {
+        el.classList.add("visible");
+      }
+    });
+  }
+  window.addEventListener("scroll", checkVisibility);
+  checkVisibility();
 });
