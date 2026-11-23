@@ -3,147 +3,331 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lucia Raciti</title>
+  <title>Lucia Raciti | Data Science &amp; Computer Science</title>
+  <meta name="description" content="Lucia Raciti: Computer Science at the University of Notre Dame and Mathematics at Saint Mary's College. Data science, AI/LLM workflows, and statistical modeling." />
+  <meta property="og:title" content="Lucia Raciti | Data Science &amp; Computer Science" />
+  <meta property="og:description" content="Computer Science @ Notre Dame · Mathematics @ Saint Mary's. Data science, AI agents, and statistical modeling." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://lraciti.github.io" />
 
   <link rel="icon" href="favicon.ico" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
   <script defer src="js/script.js"></script>
 </head>
 <body>
   <!-- Navigation -->
-  <nav class="navbar">
-    <ul class="nav-list">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="resume.pdf" target="_blank">Resume</a></li>
-    </ul>
-  </nav>
-
-  <!-- Hero -->
-  <section id="home" class="hero">
-    <img src="images/Lucia photo copy.jpeg" alt="Lucia Raciti" class="profile-image" />
-    <h1 id="typing-name"></h1>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="about section">
-    <h2>About Me</h2>
-    <p>
-      I’m a dual-degree student studying <strong>Computer Science</strong> at the University of Notre Dame 
-      and <strong>Mathematics</strong> at Saint Mary’s College. 
-      I’m passionate about leveraging data science and machine learning to address 
-      complex environmental and social challenges.
-    </p>
-    <p>
-      From mentoring high school girls in coding to conducting research on climate change 
-      and species adaptation, I thrive at the intersection of <strong>data, creativity, and impact</strong>.
-    </p>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills" class="skills section">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-card">
-        <h3>Programming</h3>
-        <ul>
-          <li>Python</li>
-          <li>C</li>
-          <li>R</li>
-          <li>MATLAB</li>
-          <li>LaTeX</li>
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="logo">LR</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav>
+        <ul class="nav-list" id="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="resume.pdf" target="_blank" rel="noopener" class="btn btn-small">Resume</a></li>
         </ul>
-      </div>
-
-      <div class="skill-card">
-        <h3>Tools</h3>
-        <ul>
-          <li>GitHub</li>
-          <li>Visual Studio Code</li>
-          <li>Excel</li>
-        </ul>
-      </div>
-
-      <div class="skill-card">
-        <h3>Data Science</h3>
-        <ul>
-          <li>Statistical Modeling</li>
-          <li>Machine Learning (GAMs, Regression)</li>
-          <li>Data Visualization</li>
-        </ul>
-      </div>
+      </nav>
     </div>
-  </section>
+  </header>
 
-  <!-- Projects -->
-  <section id="projects" class="projects section">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="project-card fade-in">
-        <!-- ✏️ Replace this placeholder image -->
-        <img src="images/bird.jpg" alt="Bird Size Project" class="project-image" />
-        <h3>Bird Size & Climate Change</h3>
-        <p>
-          Applied Linear Regression and Generalized Additive Models using Machine Learning to study bird size variation over time 
-          in relation to climate trends. Visualized results and presented at the JMM Conference 2025. Will also be presenting at JMM 2026 and NCUWM 2026 conferences.
-        </p>
-        <a><strong>Paper in Process</strong></a>
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="hero-inner">
+        <img src="images/Lucia photo copy.jpeg" alt="Lucia Raciti" class="profile-image" />
+        <h1 id="typing-name" aria-label="I'm Lucia Raciti."></h1>
+        <p class="tagline">Computer Science @ Notre Dame &middot; Mathematics @ Saint Mary's</p>
+        <p class="subtagline">Data Science &middot; AI &amp; LLM Workflows &middot; Statistical Modeling</p>
+        <div class="hero-actions">
+          <a href="resume.pdf" target="_blank" rel="noopener" class="btn">View Resume</a>
+          <a href="https://github.com/lraciti1" target="_blank" rel="noopener" class="btn btn-outline">GitHub</a>
+          <a href="https://www.linkedin.com/in/lucia-raciti-934124250/" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
+          <a href="mailto:lraciti0730@gmail.com" class="btn btn-outline">Email</a>
+        </div>
       </div>
+    </section>
 
-      <div class="project-card fade-in">
-        <!-- ✏️ Replace this placeholder image -->
-        <img src="images/farm.jpeg" alt="Farm Market Project" class="project-image" />
-        <h3>Sustainable Farm Market Analysis</h3>
+    <!-- About -->
+    <section id="about" class="section-wrap">
+      <div class="section">
+        <h2>About Me</h2>
         <p>
-          Used R-based statistical modeling and hypothesis testing to evaluate community market impact in a group setting. 
-          Identified key trends through data visualization and presented recommendations.
+          I'm a dual-degree student finishing my B.S. in <strong>Computer Science</strong> at the University of Notre Dame,
+          after earning a B.S. in <strong>Mathematics</strong> <em>Summa Cum Laude</em> from Saint Mary's College.
+          I work where data science, AI, and software engineering meet.
         </p>
-        <a href="Stats Analysis.pdf" target="_blank" class="btn">View Paper Analysis</a>
-      </div>
-
-      <div class="project-card fade-in">
-        <!-- ✏️ Replace this placeholder image -->
-        <img src="images/overtourism.jpeg" alt="Mathematical Modeling for Sustainable Tourism in Juneau, Alaska" class="project-image" />
-        <h3>Math Modeling for Sustainable Tourism in Alaska</h3>
         <p>
-          Developed differential equation models in a team setting to optimize sustainable tourism in Juneau, Alaska.
-          Analyzed the balance between economic revenue and carbon emissions using mathematical modeling and presented actionable sustainability strategies.
-        </p>
-        <a href="2025_MCM_Problem_B.pdf" target="_blank" class="btn">View Paper Analysis</a>
-      </div>
-
-      <div class="project-card fade-in">
-        <!-- ✏️ Replace this placeholder image -->
-        <img src="images/chat.jpeg" alt="Chat Application" class="project-image" />
-        <h3>Group Project Chat Application </h3>
-        <p>
-            Created a chat application in Operating Systems class with partner to understand how a client and 
-            server can be used for multiple users to chat to each other. Used threads, a monitor, and queues in implementation.
+          As a Data Science Intern at <strong>Aunalytics</strong>, I build LLM-powered classification pipelines and the
+          decision engine behind an IT department's AI agent. Before that, I engineered prompts for patent classification
+          at <strong>Atlantic Intellectual Property Services</strong> in Dublin. I also do research in statistical modeling,
+          using Generalized Additive Models to study everything from bird size under climate change to blood pressure,
+          and I've presented that work at the Joint Mathematics Meetings and NCUWM.
         </p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact -->
-  <section id="contact" class="contact section">
-    <h2>Let’s Connect</h2>
-    <p>Currently seeking a <strong>Data Science Internship</strong> for Summer 2026 — let’s talk!</p>
-    <a href="mailto:lraciti2@nd.edu" class="btn">Email Me</a>
-    <div class="social-links">
-      <a href="https://github.com/lraciti1" target="_blank"><img src="images/github-icon.png" alt="GitHub"></a>
-      <a href="https://www.linkedin.com/in/lucia-raciti-934124250/" target="_blank"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
-    </div>
-  </section>
+    <!-- Experience -->
+    <section id="experience" class="section-wrap alt">
+      <div class="section">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <article class="timeline-item fade-in">
+            <div class="timeline-header">
+              <div>
+                <h3>Aunalytics</h3>
+                <p class="role">Data Science Intern &middot; <span class="location">South Bend, IN</span></p>
+              </div>
+              <span class="date">May 2026 – Present</span>
+            </div>
+            <ul>
+              <li>Automated IT ticket categorization by combining unsupervised clustering with LLM classification, sorting 40,000 tickets into 29 categories that the IT department validated and adopted.</li>
+              <li>Built the decision engine for the IT department's AI agent: a workflow catalog mapping each category to routing, evidence, and policy rules, compiled into executable graphs and run on a persistent, resumable runtime I built.</li>
+              <li>Developed a Flask web app that lets non-technical IT staff add to and maintain workflows on their own, with no engineering support needed.</li>
+            </ul>
+          </article>
 
-  <!-- Footer -->
+          <article class="timeline-item fade-in">
+            <div class="timeline-header">
+              <div>
+                <h3>Atlantic Intellectual Property Services</h3>
+                <p class="role">Prompt Engineering Intern &middot; <span class="location">Dublin, Ireland</span></p>
+              </div>
+              <span class="date">May 2025 – May 2026</span>
+            </div>
+            <ul>
+              <li>Automated hierarchical patent classification across hundreds of tech patents by engineering and iteratively refining prompts across multiple AI models, improving accuracy by 25% and reducing client delivery time.</li>
+              <li>Improved classification consistency by diagnosing AI failure patterns, running comparative prompt tests, and refining taxonomy structure, cutting human review hours per batch.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item fade-in">
+            <div class="timeline-header">
+              <div>
+                <h3>Mathematical Research, Saint Mary's College</h3>
+                <p class="role">Research Assistant &middot; <span class="location">Notre Dame, IN</span></p>
+              </div>
+              <span class="date">Jan 2024 – Dec 2025</span>
+            </div>
+            <ul>
+              <li>Processed 500+ research records using Python (Pandas), implementing systematic data quality checks that ensured accuracy across all data outputs.</li>
+              <li>Presented data-driven insights to 50+ researchers at the Joint Mathematics Meetings (2025, 2026) and NCUWM 2026, communicating findings through accessible visualizations and presentations.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section-wrap">
+      <div class="section">
+        <h2>Education</h2>
+        <div class="edu-grid">
+          <article class="edu-card fade-in">
+            <div class="edu-top">
+              <h3>University of Notre Dame</h3>
+              <span class="date">May 2027</span>
+            </div>
+            <p class="role">Bachelor of Science, Computer Science</p>
+            <p class="muted">Notre Dame, IN</p>
+            <div class="edu-meta">
+              <span class="tag">GPA 3.81</span>
+              <span class="tag tag-soft">Study Abroad: Dublin, Ireland (May–Jun 2024)</span>
+            </div>
+          </article>
+
+          <article class="edu-card fade-in">
+            <div class="edu-top">
+              <h3>Saint Mary's College</h3>
+              <span class="date">May 2026</span>
+            </div>
+            <p class="role">Bachelor of Science, Mathematics</p>
+            <p class="muted">Notre Dame, IN</p>
+            <div class="edu-meta">
+              <span class="tag">GPA 3.94</span>
+              <span class="tag tag-soft"><em>Summa Cum Laude</em></span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section-wrap alt">
+      <div class="section">
+        <h2>Projects</h2>
+        <div class="project-grid">
+          <article class="project-card fade-in">
+            <img src="images/recipe-app.jpeg" alt="Recipe website project" class="project-image" />
+            <div class="project-body">
+              <div class="tags">
+                <span class="tag tag-status">In Progress</span>
+                <span class="tag tag-soft">Web Development</span>
+              </div>
+              <h3>Recipe Website</h3>
+              <p>
+                A recipe web app with an AI recipe reader: snap a photo of a recipe and Claude converts it into a
+                structured recipe. It builds a grocery list from your recipes' ingredients and organizes recipes by category.
+              </p>
+              <p class="stack">JavaScript &middot; React &middot; Back4App &middot; Claude API</p>
+            </div>
+          </article>
+
+          <article class="project-card fade-in">
+            <img src="images/recommender-travel.jpeg" alt="Travel recommendation app project" class="project-image" />
+            <div class="project-body">
+              <div class="tags">
+                <span class="tag tag-status">In Progress</span>
+                <span class="tag tag-soft">Database Systems</span>
+              </div>
+              <h3>Travel Recommendation App</h3>
+              <p>
+                A recommender that uses clustering and vectorization on Yelp data to build "shadow users." An onboarding
+                questionnaire matches new users to a similar profile, and as users share opinions over time, the
+                algorithm shifts to their own preferences.
+              </p>
+              <p class="stack">Python &middot; Flask &middot; SQL &middot; HTML/CSS</p>
+            </div>
+          </article>
+
+          <article class="project-card fade-in">
+            <img src="images/blood-pressure.avif" alt="Blood pressure prediction project" class="project-image" />
+            <div class="project-body">
+              <div class="tags">
+                <span class="tag tag-soft">Senior Capstone</span>
+                <span class="tag tag-soft">Jan – May 2026</span>
+              </div>
+              <h3>Blood Pressure Prediction Model</h3>
+              <p>
+                Cleaned and validated 4,217 NHANES health records, then built a GAM-based model that uncovered non-linear
+                relationships between demographics and blood pressure, including significantly higher blood pressure in men than women.
+              </p>
+              <p class="stack">Python &middot; Pandas &middot; pygam</p>
+            </div>
+          </article>
+
+          <article class="project-card fade-in">
+            <img src="images/bird.jpg" alt="Bird size and climate change project" class="project-image" />
+            <div class="project-body">
+              <div class="tags">
+                <span class="tag tag-status">Paper in Progress</span>
+                <span class="tag tag-soft">Research</span>
+              </div>
+              <h3>Bird Size &amp; Climate Change</h3>
+              <p>
+                Applied linear regression and Generalized Additive Models to study bird size variation over time in
+                relation to climate trends. Presented at JMM 2025, JMM 2026, and NCUWM 2026.
+              </p>
+              <p class="stack">Python &middot; Regression &middot; GAMs</p>
+            </div>
+          </article>
+
+          <article class="project-card fade-in">
+            <img src="images/farm.jpeg" alt="Sustainable farm market analysis project" class="project-image" />
+            <div class="project-body">
+              <div class="tags">
+                <span class="tag tag-soft">Statistics</span>
+              </div>
+              <h3>Sustainable Farm Market Analysis</h3>
+              <p>
+                Used statistical modeling and hypothesis testing in a team to evaluate a community market's impact,
+                identified key trends through data visualization, and presented recommendations.
+              </p>
+              <p class="stack">R &middot; Hypothesis Testing &middot; Data Visualization</p>
+              <a href="Stats Analysis.pdf" target="_blank" rel="noopener" class="btn btn-small">View Paper</a>
+            </div>
+          </article>
+
+          <article class="project-card fade-in">
+            <img src="images/chat.jpeg" alt="Client-server chat application project" class="project-image" />
+            <div class="project-body">
+              <div class="tags">
+                <span class="tag tag-soft">Operating Systems</span>
+              </div>
+              <h3>Client–Server Chat Application</h3>
+              <p>
+                Built a multi-user chat application with a partner, using a client–server architecture so many users can
+                chat at once. Implemented with threads, a monitor, and queues.
+              </p>
+              <p class="stack">C &middot; Threads &middot; Concurrency</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section-wrap">
+      <div class="section">
+        <h2>Technical Skills</h2>
+        <div class="skills-table fade-in">
+          <div class="skill-row">
+            <h3 class="skill-label">Languages</h3>
+            <div class="chips">
+              <span class="chip chip-main">Python</span><span class="chip chip-main">SQL</span>
+              <span class="chip chip-main">R</span><span class="chip chip-main">Java</span>
+            </div>
+          </div>
+          <div class="skill-row">
+            <h3 class="skill-label">Libraries</h3>
+            <div class="chips">
+              <span class="chip">Pandas</span><span class="chip">NumPy</span><span class="chip">scikit-learn</span><span class="chip">pygam</span>
+            </div>
+          </div>
+          <div class="skill-row">
+            <h3 class="skill-label">Data &amp; AI</h3>
+            <div class="chips">
+              <span class="chip">LLM Classification</span><span class="chip">Prompt Engineering</span><span class="chip">AI Agents</span>
+              <span class="chip">Clustering</span><span class="chip">GAMs</span><span class="chip">ETL</span><span class="chip">Workflow Orchestration</span>
+            </div>
+          </div>
+          <div class="skill-row">
+            <h3 class="skill-label">Web &amp; Visualization</h3>
+            <div class="chips">
+              <span class="chip">Flask</span><span class="chip">React</span><span class="chip">HTML/CSS</span><span class="chip">Power BI</span><span class="chip">Excel</span>
+            </div>
+          </div>
+          <div class="skill-row">
+            <h3 class="skill-label">Developer Tools</h3>
+            <div class="chips">
+              <span class="chip">GitHub</span><span class="chip">GitLab</span><span class="chip">Jupyter</span><span class="chip">VS Code</span>
+              <span class="chip">Claude</span><span class="chip">Gemini</span>
+            </div>
+          </div>
+          <div class="skill-row">
+            <h3 class="skill-label">Productivity</h3>
+            <div class="chips">
+              <span class="chip">Slack</span><span class="chip">Microsoft Office</span><span class="chip">Google Workspace</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section-wrap alt">
+      <div class="section contact">
+        <h2>Let's Connect</h2>
+        <p>I'm always happy to talk about data science, AI, research, or new opportunities. Feel free to reach out!</p>
+        <a href="mailto:lraciti0730@gmail.com" class="btn">Email Me</a>
+        <div class="social-links">
+          <a href="https://github.com/lraciti1" target="_blank" rel="noopener"><img src="images/github-icon.png" alt="GitHub" /></a>
+          <a href="https://www.linkedin.com/in/lucia-raciti-934124250/" target="_blank" rel="noopener"><img src="images/linkedin-icon.png" alt="LinkedIn" /></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
   <footer class="footer">
-    <p>© 2025 Lucia Raciti</p>
+    <p>&copy; 2026 Lucia Raciti</p>
   </footer>
 </body>
 </html>
